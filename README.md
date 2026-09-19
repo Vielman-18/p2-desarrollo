@@ -52,26 +52,26 @@ interface Training {
 
 1. Clonar el repositorio e instalar dependencias:
 
-   ```bash
+```bash
    git clone https://github.com/Vielman-18/p2-desarrollo.git
    cd p2-desarrollo
    npm install
-   ```
+```
 
 2. Levantar el **mock API** (json-server) en una terminal:
 
-   ```bash
+```bash
    npm run mock-api
-   ```
+```
 
    Esto sirve `db.json` en `http://localhost:3001` (incluye las colecciones `employees` y
    `trainings`).
 
 3. En otra terminal, levantar el frontend:
 
-   ```bash
+```bash
    npm run dev
-   ```
+```
 
 4. Abrir `http://localhost:5173` en el navegador. Login de prueba:
 
@@ -85,12 +85,14 @@ interface Training {
 
 ## Despliegue
 
-- Frontend desplegado en: _(agregar aquí el enlace de Vercel/Netlify/Render una vez desplegado)_
-- Nota: el mock API (`json-server`) corre solo en local. Para producción, considerar desplegar
-  `db.json` con un servicio como [json-server en Render](https://render.com) o migrar a un backend
-  real, y actualizar la variable `VITE_API_URL` apuntando a esa URL.
+- **Frontend desplegado en:** https://p2-desarrollo.vercel.app
+- El frontend en producción consume los datos desde
+  [`my-json-server.typicode.com`](https://my-json-server.typicode.com/Vielman-18/p2-desarrollo),
+  que sirve el `db.json` de este mismo repositorio como una API REST pública, configurado mediante
+  la variable de entorno `VITE_API_URL` en Vercel.
+- Para desarrollo local, sigue usando `json-server` (ver sección de Instalación arriba).
 
 ## Capturas de pantalla
 
 _(agregar aquí capturas de la aplicación funcionando: dashboard, módulo de Empleados y módulo de
-Capacitaciones con el modal de creación/edición)_
+Capacitaciones)_
