@@ -5,6 +5,7 @@ import Header from './layouts/Header';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import EmployeesPage from './pages/EmployeesPage';
+import CapacitacionesPage from './pages/CapacitacionesPage';
 import ProtectedRoute from './components/ProtectedRoute';
 import { useAuthStore } from './store/authStore';
 
@@ -46,6 +47,14 @@ function App() {
           <ProtectedRoute>
             <AppLayout>
               <EmployeesPage />
+            </AppLayout>
+          </ProtectedRoute>
+        } />
+
+        <Route path="/capacitaciones" element={
+          <ProtectedRoute>
+            <AppLayout>
+              <CapacitacionesPage />
             </AppLayout>
           </ProtectedRoute>
         } />

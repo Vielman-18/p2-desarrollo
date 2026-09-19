@@ -65,6 +65,34 @@ export interface PaginatedResponse<T> {
   totalPages: number;
 }
 
+// --- Tipos del dominio de Capacitaciones ---
+
+export type TrainingCategory =
+  | "Tecnología"
+  | "Liderazgo"
+  | "Seguridad"
+  | "Ventas"
+  | "Habilidades Blandas"
+  | "Cumplimiento";
+
+export type TrainingStatus = "programada" | "en_curso" | "finalizada" | "cancelada";
+
+export interface Training {
+  id: number;
+  nombre: string;
+  categoria: TrainingCategory;
+  instructor: string;
+  fechaInicio: string; // ISO 8601: "2026-08-01"
+  fechaFin: string; // ISO 8601: "2026-08-15"
+  cupoMaximo: number;
+  inscritos: number;
+  estado: TrainingStatus;
+  descripcion?: string;
+}
+
+export type CreateTrainingDto = Omit<Training, "id">;
+export type UpdateTrainingDto = Partial<CreateTrainingDto>;
+
 // --- Tipos de navegación ---
 
 export interface NavItem {

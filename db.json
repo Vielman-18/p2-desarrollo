@@ -67,5 +67,79 @@
       "status": "active",
       "role": "employee"
     }
+  ],
+  "trainings": [
+    {
+      "id": 1,
+      "nombre": "Fundamentos de React",
+      "categoria": "Tecnología",
+      "instructor": "Ana García",
+      "fechaInicio": "2026-08-01",
+      "fechaFin": "2026-08-15",
+      "cupoMaximo": 25,
+      "inscritos": 18,
+      "estado": "finalizada",
+      "descripcion": "Introducción a componentes, hooks y manejo de estado en React."
+    },
+    {
+      "id": 2,
+      "nombre": "Liderazgo de Equipos Remotos",
+      "categoria": "Liderazgo",
+      "instructor": "Carlos Martínez",
+      "fechaInicio": "2026-09-10",
+      "fechaFin": "2026-09-24",
+      "cupoMaximo": 20,
+      "inscritos": 20,
+      "estado": "en_curso",
+      "descripcion": "Herramientas y prácticas para dirigir equipos distribuidos."
+    },
+    {
+      "id": 3,
+      "nombre": "Seguridad de la Información",
+      "categoria": "Seguridad",
+      "instructor": "Roberto Silva",
+      "fechaInicio": "2026-10-05",
+      "fechaFin": "2026-10-12",
+      "cupoMaximo": 30,
+      "inscritos": 12,
+      "estado": "programada",
+      "descripcion": "Buenas prácticas de ciberseguridad para todo el personal."
+    },
+    {
+      "id": 4,
+      "nombre": "Técnicas de Negociación",
+      "categoria": "Ventas",
+      "instructor": "Diego Herrera",
+      "fechaInicio": "2026-07-01",
+      "fechaFin": "2026-07-10",
+      "cupoMaximo": 15,
+      "inscritos": 9,
+      "estado": "cancelada",
+      "descripcion": "Estrategias de negociación aplicadas a ventas B2B."
+    },
+    {
+      "id": 5,
+      "nombre": "Comunicación Efectiva",
+      "categoria": "Habilidades Blandas",
+      "instructor": "María López",
+      "fechaInicio": "2026-11-03",
+      "fechaFin": "2026-11-14",
+      "cupoMaximo": 25,
+      "inscritos": 5,
+      "estado": "programada",
+      "descripcion": "Comunicación asertiva dentro y fuera del equipo de trabajo."
+    },
+    {
+      "id": 6,
+      "nombre": "Cumplimiento y Ética Corporativa",
+      "categoria": "Cumplimiento",
+      "instructor": "Lucía Ramírez",
+      "fechaInicio": "2026-06-01",
+      "fechaFin": "2026-06-05",
+      "cupoMaximo": 40,
+      "inscritos": 40,
+      "estado": "finalizada",
+      "descripcion": "Políticas internas y código de ética de la empresa."
+    }
   ]
 }
